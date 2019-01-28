@@ -605,37 +605,3 @@ skplt.metrics.plot_lift_curve(pcatest, svm_pred)
 
 
 
-
-
-# Time
-
-# Naive 32.63s vs Optimized 0.25s
-
-
-# =============================================================================
-# def correlation(dataset, threshold):
-#     col_corr = set() # Set of all the names of deleted columns
-#     corr_matrix = dataset.corr().abs()
-#     for i in range(len(corr_matrix.columns)):
-#         for j in range(i):
-#             if corr_matrix.iloc[i, j] >= threshold:
-#                 colname = corr_matrix.columns[i] # getting the name of column
-#                 col_corr.add(colname)
-#                 if colname in dataset.columns:
-#                     del dataset[colname] # deleting the column from the dataset
-#
-#     return(dataset)
-#
-# cortrain=correlation(vartrain,0.95)
-# cortrain.columns
-# cortest[:,col for col in cortrain.columns]
-# cortest=correlation(vartest,0.95)
-# cortrain.shape
-# cross_val_score(svc,cortrain,df_trainlabel, cv=5).mean()
-# scv = svc.fit(cortrain, df_trainlabel)
-# y_pred = scv.predict(cortest)
-# accuracy_score(y_pred, df_testlabel)
-#
-# =============================================================================
-
-
